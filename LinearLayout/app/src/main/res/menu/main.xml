@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/linear_layout"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/linear_layout" />
+
+    <item
+        android:id="@+id/relative_layout"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/relative_layout" />
+
+    <item
+        android:id="@+id/grid_layout"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/grid_layout" />
+
+    <item
+        android:id="@+id/drawer_layout"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/drawer_layout" />
+
+    <item
+        android:id="@+id/sliding_layout"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/sliding_layout" />
+
+    <item
+        android:id="@+id/paging_layout"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/paging_layout" />
+</menu>

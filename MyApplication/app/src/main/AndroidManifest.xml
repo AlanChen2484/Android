@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hesky.todolist"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/todo_list"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.ToDoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="cn.ToDoContentProvider"
+            android:authorities="com.hesky.todoprovider"
+            android:exported="false" />
+
+        <receiver android:name="cn.ToDoListInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.hesky.intent.action.ToDoLIST_ALARM"/>"
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="cn.ToDoItemEditActivity"
+            android:label="@string/title_activity_data_and_time" >
+        </activity>
+        <activity
+            android:name="com.CalendarActivity"
+            android:label="@string/title_activity_calendar_and_time" >
+        </activity>
+    </application>
+
+</manifest>

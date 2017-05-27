@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">UserInterface</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello World Here\'s the Time!</string>
+    <string name="clockGone">Remove AnalogClock From Layout</string>
+    <string name="clockViz">Restore AnalogClock Visibility</string>
+    <string name="clockInViz">Render AnalogClock Invisible</string>
+
+    <string name="action_red">Blood Red</string>
+    <string name="actionred">RED</string>
+
+    <string name="action_org">Burnt Orange</string>
+    <string name="actionorg">ORG</string>
+
+    <string name="action_yel">Banana Yellow</string>
+    <string name="actionyel">YEL</string>
+
+    <string name="action_grn">Forest Green</string>
+    <string name="actiongrn">GRN</string>
+
+    <string name="action_blu">Ocean Blue</string>
+    <string name="actionblu">BLU</string>
+
+    <string name="action_pur">Deep Purple</string>
+    <string name="actionpur">PUR</string>
+
+    <string name="action_wht">Stark Whitle</string>
+    <string name="actionwht">WHT</string>
+
+    <string name="action_inv">Invisible</string>
+
+    <string name="popup_viz">VISIBLE</string>
+    <string name="popup_inviz">INVISIBLE</string>
+    <string name="popup_gone">GONE</string>
+
+    <string name="tab_one">DIGITAL</string>
+    <string name="tab_two">ANALOG</string>
+
+    <string name="simpleClockLabel">Simple 3D Clock</string>
+    <string name="worldClockLabel">World 3D Clock</string>
+    <string name="happyClockLabel">Happy 3D Clock</string>
+</resources>

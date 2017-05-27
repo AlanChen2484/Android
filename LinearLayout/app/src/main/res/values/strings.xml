@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Planet</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="grid_layout">Gird Layout</string>
+    <string name="drawer_layout">Drawer Layout</string>
+    <string name="sliding_layout">SlidingPane Layout</string>
+    <string name="paging_layout">ViewPager Layout</string>
+
+    <string name="planet_name_earth">Planet Name: Earth</string>
+    <string name="planet_name_venus">Planet Name: Venus</string>
+    <string name="planet_name_jupiter">Planet Name: Jupiter</string>
+    <string name="planet_name_neptune">Planet Name: Neptune</string>
+    <string name="planet_name_mars">Planet Name: Mars</string>
+
+    <string name="planet_mass_earth">Planet Mass: 5973 Yg</string>
+    <string name="planet_mass_venus">Planet Mass: 4870 Yg</string>
+    <string name="planet_mass_jupiter">Planet Mass: 1898000 Yg</string>
+    <string name="planet_mass_neptune">Planet Mass: 10200 Yg</string>
+    <string name="planet_mass_mars">Planet Mass: 642 Yg</string>
+
+    <string name="planet_grav_earth">Planet Gravity: 9.8 m/s</string>
+    <string name="planet_grav_venus">Planet Gravity: 8.9 m/s</string>
+    <string name="planet_grav_jupiter">Planet Gravity: 23.1m/s</string>
+    <string name="planet_grav_neptune">Planet Gravity: 11.0m/s</string>
+    <string name="planet_grav_mars">Planet Gravity: 3.7m/s</string>
+
+    <string name="planet_size_earth">Planet Diameter: 12,756 KM</string>
+    <string name="planet_size_venus">Planet Diameter: 12,104 KM</string>
+    <string name="planet_size_jupiter">Planet Diameter: 142,984 KM</string>
+    <string name="planet_size_neptune">Planet Diameter: 49,528 KM</string>
+    <string name="planet_size_mars">Planet Diameter: 6,972 KM</string>
+
+    <string name="ib_earth">Earth Button</string>
+    <string name="ib_venus">Venus Button</string>
+    <string name="ib_jupiter">Jupiter Button</string>
+    <string name="ib_neptune">Neptune Button</string>
+    <string name="ib_mars">Mars Button</string>
+
+    <string-array name="planets">
+        <item>Earth</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+        <item>Neptune</item>
+        <item>Mars</item>
+    </string-array>
+
+</resources>

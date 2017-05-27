@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="ifRoom|withText"-->
+        <!--android:title="@string/action_settings"/>-->
+    <item
+        android:id="@+id/action_red"
+        android:title="@string/action_red"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actionred"/>
+    <item
+        android:id="@+id/action_org"
+        android:title="@string/action_org"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actionorg"/>
+    <item
+        android:id="@+id/action_yel"
+        android:title="@string/action_yel"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actionyel"/>
+    <item
+        android:id="@+id/action_grn"
+        android:title="@string/action_grn"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actiongrn"/>
+    <item
+        android:id="@+id/action_blu"
+        android:title="@string/action_blu"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actionblu"/>
+    <item
+        android:id="@+id/action_pur"
+        android:title="@string/action_pur"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actionpur"/>
+    <item
+        android:id="@+id/action_wht"
+        android:title="@string/action_wht"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"
+        android:titleCondensed="@string/actionwht"/>
+
+
+</menu>

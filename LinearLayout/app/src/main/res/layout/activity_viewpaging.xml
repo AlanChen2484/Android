@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/planetViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040f58"
+    >
+    <android.support.v4.view.PagerTabStrip
+        android:id="@+id/pagerTitleStrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top"
+        android:background="#021484"/>
+
+</android.support.v4.view.ViewPager>

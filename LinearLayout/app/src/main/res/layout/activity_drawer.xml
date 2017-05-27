@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingLeft="80dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ib_earth_normal" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/planet_name_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="12dp"
+            android:shadowColor="#77000000"
+            android:shadowDx="-2.4"
+            android:shadowDy="2.4"
+            android:shadowRadius="1.2"
+            android:text="@string/planet_mass_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="12dp"
+            android:shadowColor="#77000000"
+            android:shadowDx="-2.4"
+            android:shadowDy="2.4"
+            android:shadowRadius="1.2"
+            android:text="@string/planet_grav_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="12dp"
+            android:shadowColor="#77000000"
+            android:shadowDx="-2.4"
+            android:shadowDy="2.4"
+            android:shadowRadius="1.2"
+            android:text="@string/planet_size_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#CCFFFFFF"
+        android:choiceMode="singleChoice"
+        android:divider="#77FFFFFF"
+        android:dividerHeight="2dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>
