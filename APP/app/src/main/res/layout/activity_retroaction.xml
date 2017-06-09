@@ -11,9 +11,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#eceff1"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"
+        android:backgroundTint="#060606"/>
 
     <TextView
         android:id="@+id/textView"
@@ -67,7 +68,7 @@
         app:srcCompat="@android:drawable/stat_notify_more" />
 
     <Button
-        android:id="@+id/email_sign_in_button"
+        android:id="@+id/button1"
         style="?android:textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent_l3 = new Intent(this, FoundActivity.class);
                 this.startActivity(intent_l3);
                 break;
-
+            case R.id.selectprinterActivity:
+                Intent intent_l4 = new Intent(this, SelectPrinter.class);
+                this.startActivity(intent_l4);
+                break;
 
         }
         return true;

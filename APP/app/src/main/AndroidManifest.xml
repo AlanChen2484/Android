@@ -29,6 +29,10 @@
             android:name=".FoundActivity"
             android:label="@string/Found"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectPrinter"
+            android:label="@string/Selectprinter"
+            android:theme="@style/AppTheme.NoActionBar" />
 </application>
 
 </manifest>
