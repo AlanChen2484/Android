@@ -4,14 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v7.widget.CardView;
+import android.view.Menu;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ImageButton;
-
 import android.widget.Toast;
-
+import android.view.MenuItem;
 
 public class FoundActivity extends AppCompatActivity {
 
@@ -25,21 +28,52 @@ public class FoundActivity extends AppCompatActivity {
     private ImageButton heart5;
     private ImageButton heart6;
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_found);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("发现界面");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu:
+                        Log.e("Test---->","点击了右边图标");
+                        break;
+                    case R.id.toolbar_r_1:
+                        Log.e("Test---->","点击了弹出菜单1");
+                        break;
+                    case R.id.toolbar_r_2:
+                        Log.e("Test---->","点击了弹出菜单2");
+                        break;
+                    case R.id.toolbar_r_3:
+                        Log.e("Test---->","点击了弹出菜单3");
+                        break;
+                }
+                return true;    //返回为true
+            }
+        });
+
+
 //        cardView = (CardView) findViewById(R.id.cardView1);
 //        cardView.setRadius(8);//设置图片圆角的半径大小
 //        cardView.setCardElevation(8);//设置阴影部分大小
 //        cardView.setContentPadding(5, 5, 5, 5);//设置图片距离阴影大小
+
         cardView = (CardView) findViewById(R.id.cardView1);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,6 +181,11 @@ public class FoundActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.foundmenu, menu);
+        return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
