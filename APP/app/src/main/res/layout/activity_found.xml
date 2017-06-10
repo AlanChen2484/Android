@@ -9,10 +9,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        android:background="@color/colorPrimary"
-        app:popupTheme="@style/OverflowMenuStyle"/>
+        app:popupTheme="@style/OverflowMenuStyle" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -49,8 +49,8 @@
                         android:id="@+id/imageView1"
                         android:layout_width="160dp"
                         android:layout_height="120dp"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/asd" />
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/a" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginTop="8dp"
-                            android:text="野花"
+                            android:text="昨夜辰曦"
                             android:textSize="16sp" />
 
                         <TextView
@@ -74,8 +74,8 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
-                            android:layout_marginTop="24dp"
-                            android:text="森林与鹿"
+                            android:layout_marginTop="28dp"
+                            android:text="星系"
                             android:textSize="14sp" />
 
                         <ImageButton
@@ -97,10 +97,10 @@
                 android:id="@+id/cardView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp">
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp">
 
                 <LinearLayout
                     android:id="@+id/linearLayout2"
@@ -115,8 +115,8 @@
                         android:id="@+id/imageView2"
                         android:layout_width="160dp"
                         android:layout_height="120dp"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/asd" />
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/b" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginTop="8dp"
-                            android:text="野花"
+                            android:text="昨夜辰曦"
                             android:textSize="16sp" />
 
                         <TextView
@@ -140,8 +140,8 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
-                            android:layout_marginTop="24dp"
-                            android:text="森林与鹿"
+                            android:layout_marginTop="28dp"
+                            android:text="极光"
                             android:textSize="14sp" />
 
                         <ImageButton
@@ -164,10 +164,10 @@
                 android:id="@+id/cardView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp">
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp">
 
                 <LinearLayout
                     android:id="@+id/linearLayout3"
@@ -182,8 +182,8 @@
                         android:id="@+id/imageView3"
                         android:layout_width="160dp"
                         android:layout_height="120dp"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/asd" />
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/c" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -197,7 +197,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginTop="8dp"
-                            android:text="野花"
+                            android:text="昨夜辰曦"
                             android:textSize="16sp" />
 
                         <TextView
@@ -207,8 +207,8 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
-                            android:layout_marginTop="24dp"
-                            android:text="森林与鹿"
+                            android:layout_marginTop="28dp"
+                            android:text="银河"
                             android:textSize="14sp" />
 
                         <ImageButton
@@ -233,17 +233,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发现采集"
         android:layout_marginLeft="8dp"
-        android:textSize="16sp"/>
+        android:text="发现采集"
+        android:textSize="24sp" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fadingEdge="vertical"
-        android:scrollbars="none"
-        >
+        android:scrollbars="none">
 
 
         <LinearLayout
@@ -255,10 +254,10 @@
                 android:id="@+id/cardView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="4dp">
+                android:layout_marginTop="8dp">
 
                 <LinearLayout
                     android:id="@+id/linearLayout4"
@@ -271,10 +270,10 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/asd" />
+                        android:layout_width="400dp"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/d" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -288,7 +287,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginTop="8dp"
-                            android:text="野花"
+                            android:text="最终幻想"
                             android:textSize="16sp" />
 
                         <TextView
@@ -298,8 +297,8 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
-                            android:layout_marginTop="24dp"
-                            android:text="森林与鹿"
+                            android:layout_marginTop="28dp"
+                            android:text="露娜弗蕾亚"
                             android:textSize="14sp" />
 
 
@@ -323,10 +322,10 @@
                 android:id="@+id/cardView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp">
+                android:layout_marginTop="4dp">
 
                 <LinearLayout
                     android:id="@+id/linearLayout5"
@@ -339,10 +338,10 @@
 
                     <ImageView
                         android:id="@+id/imageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/asd" />
+                        android:layout_width="400dp"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/e" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -356,7 +355,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginTop="8dp"
-                            android:text="野花"
+                            android:text="新海诚"
                             android:textSize="16sp" />
 
                         <TextView
@@ -366,8 +365,8 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
-                            android:layout_marginTop="24dp"
-                            android:text="森林与鹿"
+                            android:layout_marginTop="28dp"
+                            android:text="你の名字"
                             android:textSize="14sp" />
 
 
@@ -391,10 +390,10 @@
                 android:id="@+id/cardView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp">
+                android:layout_marginTop="4dp">
 
                 <LinearLayout
                     android:id="@+id/linearLayout6"
@@ -407,10 +406,10 @@
 
                     <ImageView
                         android:id="@+id/imageView6"
-                        android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/asd" />
+                        android:layout_width="400dp"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/f" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -434,10 +433,9 @@
                             android:layout_marginBottom="8dp"
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
-                            android:layout_marginTop="24dp"
-                            android:text="森林与鹿"
+                            android:layout_marginTop="28dp"
+                            android:text="浩瀚星空"
                             android:textSize="14sp" />
-
 
                         <ImageButton
                             android:id="@+id/po_image6"

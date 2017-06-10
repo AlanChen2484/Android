@@ -5,20 +5,20 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.ContextMenu;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v7.widget.CardView;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import android.view.MenuItem;
+
 
 public class FoundActivity extends AppCompatActivity {
 
-    private CardView cardView;
+    private CardView cardView1;
+
+    private CardView cardView4;
+
     private boolean flag = true;
 
     private ImageButton heart1;
@@ -74,8 +74,8 @@ public class FoundActivity extends AppCompatActivity {
 //        cardView.setCardElevation(8);//设置阴影部分大小
 //        cardView.setContentPadding(5, 5, 5, 5);//设置图片距离阴影大小
 
-        cardView = (CardView) findViewById(R.id.cardView1);
-        cardView.setOnClickListener(new View.OnClickListener() {
+        cardView1 = (CardView) findViewById(R.id.cardView1);
+        cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -83,6 +83,17 @@ public class FoundActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        cardView4 = (CardView) findViewById(R.id.cardView4);
+        cardView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(FoundActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         heart1 = (ImageButton) findViewById(R.id.po_image1);
         heart2 = (ImageButton) findViewById(R.id.po_image2);
         heart3 = (ImageButton) findViewById(R.id.po_image3);

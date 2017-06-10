@@ -28,7 +28,7 @@ public class SelectPrinter extends AppCompatActivity {
         final View actionB = findViewById(R.id.action_b);
 
         FloatingActionButton actionC = new FloatingActionButton(getBaseContext());
-        actionC.setTitle("Hide/Show Action above");
+        actionC.setTitle("发送给朋友");
         actionC.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -46,7 +46,7 @@ public class SelectPrinter extends AppCompatActivity {
         actionA.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                actionA.setTitle("Action ");
+                actionA.setTitle("分享到QQ");
             }
         });
         // Test that FAMs containing FABs with visibility GONE do not cause crashes

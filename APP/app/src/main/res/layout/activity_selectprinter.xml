@@ -27,9 +27,8 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/asd" />
+                android:scaleType="centerCrop"
+                android:src="@mipmap/g" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,6 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
+                    android:textSize="16sp"
                     android:text="来自我的相册" />
             </LinearLayout>
         </LinearLayout>
@@ -72,8 +72,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/background">
+        android:layout_height="wrap_content">
 
         <com.getbase.floatingactionbutton.FloatingActionsMenu
             android:id="@+id/multiple_actions"
@@ -96,7 +95,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_colorNormal="@color/white"
                 fab:fab_colorPressed="@color/white_pressed"
-                fab:fab_title="Action A" />
+                fab:fab_title="分享到好友圈" />
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/action_b"
@@ -104,7 +103,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_colorNormal="@color/white"
                 fab:fab_colorPressed="@color/white_pressed"
-                fab:fab_title="Action with a " />
+                fab:fab_title="分享到微信" />
 
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
