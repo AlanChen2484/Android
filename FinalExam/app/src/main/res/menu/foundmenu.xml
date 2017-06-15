@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu"
+        android:title="分享"
+        android:icon="@drawable/ic_menu_white_48dp"
+        app:showAsAction="ifRoom"
+        >
+
+        <!-- item包含menu表示该menu是item下的子菜单 -->
+        <menu>
+            <!-- 将group中的菜单项放于一个组里面 -->
+            <group>
+                <item android:id="@+id/toolbar_r_1"
+                    android:title="素描"
+                    app:showAsAction="ifRoom"
+                    />
+                <item android:id="@+id/toolbar_r_2"
+                    android:title="平面设计"
+                    app:showAsAction="ifRoom"
+                    />
+                <item android:id="@+id/toolbar_r_3"
+                    android:title="UI"
+                    app:showAsAction="ifRoom"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>
